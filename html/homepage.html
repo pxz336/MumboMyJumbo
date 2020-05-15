@@ -4,10 +4,11 @@
             <meta charset="utf-8">
             <meta name = "viewport" content="width = device-width, initial-scale=1, shrink-to-fit=no">
             <!--Link for BoostrapCSS-->
-            <link rel="stylesheet" href = "https://stackpath.boostrapcdn.com/boostrap/4.5.0/css/bootstrap/min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
             
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+            <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
             
             <title>
                 Mumbo My Jumbo Homepage
@@ -17,40 +18,76 @@
         
         <body>
             <div>            
-                <img id = "logo" src = "before%20dxp.png"> 
+                <img id = "logo" src = "before%20dxp.png" alt = "Mumbo Logo"> 
             </div>
             
-            <nav class = "navbar navbar-default">
-                <div class = "container-fluid">
-                    <div class = "navbar-header">
-                        <a class = "navbar-brand" href = "#">Mumbo My Jumbo</a>                
-                    </div>
-                    
-                    <ul class = "nav navbar-nav">
-                        <li class = "active"><a href = "#">Home</a></li>
-                        <li class = "dropdown"><a class = "dropdown-toggle" data-toggle = "dropdown" href = "#">Page 1<span class = "caret"></span></a>
-                            <u1 class = "dropdown-menu">
-                                <li><a href = "#"> Page 1-1</a></li>
-                                <li><a href = "#"> Page 1-2</a></li>
-                                <li><a href = "#"> Page 1-3</a></li>                            
-                            </u1>                        
-                        </li>
-                        <li><a href = "#">Page 2</a></li>
-                        <li><a href = "#">Page 2</a></li>                    
+            
+            
+            
+            
+            <nav class="navbar navbar-expand-lg" id = "main-nav-bar">
+                <a class="navbar-brand" href="#">Mumbo My Jumbo</a>  
+
+                <div class="navbar" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                     <li class="nav-item active">
+                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                     </li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="#" id = "politics-page">Politics</a></li>
+                     <li class="nav-item">
+                         <a class="nav-link" href="#" id = "sports-page">Sports</a></li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="#" id = "tech-page">Technology</a></li>    
+                    <li class="nav-item">
+                         <a class="nav-link" href="#" id = "world-page">World</a></li>
+                    <li class="nav-item">
+                         <a class="nav-link" href="#" id = "life-page">Lifestyle</a></li>
+                        
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search the Trash Heap" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rummage</button>
+                    </form>
+
                     </ul>
-                    content
                 </div>
             </nav>
             
-            <div class = "container">
-                <h3>Navbar With Dropdown</h3>
-                <p> This example adds dropdown menu for p. 1 button.</p>
+                  
+      <!--<div id = "navigation-bar" class = "container-fluid">      
+        <ul id = "navbarNavItems" class = "nav">
             
+            <li class = "nav-item" id = "sitename">
+                <a class = "nav-link active" href="#">Mumbo My Jumbo</a></li>
             
-            </div>
+            <li class = "nav-item" id = "">
+                <a class = "nav-link" href="#">Link1</a></li>            
             
+            <li class = "nav-item" id = "">
+                <a class = "nav-link" href="#">Politics</a></li>
             
-            
+            <li class = "nav-item">
+                <a class = "nav-link" href = "#">Politics</a></li>
+
+            <li class = "nav-item">
+                <a class = "nav-link" href = "#">Featured Articles</a></li>
+
+            <li class = "world-page">
+                <a class = "nav-link" href = "#">World</a></li>
+
+            <li class = "tech-page">
+                <a class = "nav-link" href = "#">Technology</a></li>
+
+            <li class = "nav-item">
+                <a class = "sports-page" href = "#">Sports</a></li>
+
+            <li class = "nav-item">
+                <a class = "life-page" href = "#">Lifestyle</a></li>
+          
+        </ul>
+      
+      </div>-->
+                 
             <!--Boostrap CDN Links-->
             <!--JQuery-->
             <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
