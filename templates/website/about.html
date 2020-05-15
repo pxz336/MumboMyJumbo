@@ -1,0 +1,113 @@
+
+
+{% extends 'base.html' %}
+{% block content %}
+<!DOCTYPE html>
+
+			
+			<!-- Page Header -->
+			<div class="page-header">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-10">
+							<ul class="page-header-breadcrumb">
+								<li><a href="{% url 'home' %}">Home</a></li>
+								<li>About Us</li>
+							</ul>
+							<h1>About Us</h1>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /Page Header -->
+		</header>
+		<!-- /Header -->
+		
+		<!-- section -->
+		<div class="section">
+			<!-- container -->
+			<div class="container">
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-8">
+						<div class="section-row">
+							<p>What? What the hell...Who are you and why do you wanna wanna wanna **burps** know all about me huh? The hell you think this is huh bubby? I write garbage and I put it on the intertubes and here we are. It's shit and I like it that way. Mind your business or I'll bark. I'll really do it.</p>
+							<figure class="figure-img">
+								<img class="img-responsive" src="./img/about-1.jpg" alt="">
+							</figure>
+							<p>Woof it.</p>
+						</div>
+						<div class="row section-row">
+							<div class="col-md-6">
+								<figure class="figure-img">
+									<img class="img-responsive" src="./img/about-2.jpg" alt="">
+								</figure>
+							</div>
+							<div class="col-md-6">
+								<h3>OuR MiSsIoN</h3>
+								<p>Scoop up our head garbage and spit it on this dumpsterfire of a website. It's all real even if its made up.</p>
+								<ul class="list-style">
+									<li><p>Woop</p></li>
+									<li><p>Wop</p></li>
+									<li><p>Skiddy Pop</p></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+					<!-- aside -->
+					<div class="col-md-4">
+						<!-- ad -->
+						<div class="aside-widget text-center">
+							<a href="#" style="display: inline-block;margin: auto;">
+								<img class="img-responsive" src="./img/ad-1.jpg" alt="">
+							</a>
+						</div>
+						<!-- /ad -->
+
+						<!-- post widget -->
+						<div class="aside-widget">
+							<div class="section-title">
+								<h2>Recent Posts</h2>
+							</div>
+
+							{% for post in all_posts_list|slice:":3" %}
+							<div class="post post-widget">
+								<a class="post-img" href="{% url 'alldetail' post.pk post.category post.slug %}"><img src="{{post.image}}" alt="{{post.title}}"></a>
+								<div class="post-body">
+									<h3 class="post-title"><a href="{% url 'alldetail' post.pk post.category post.slug %}">{{post.title}}</a></h3>
+								</div>
+							</div>
+							{% endfor %}
+
+							<!-- <div class="post post-widget">
+								<a class="post-img" href="blog-post.html"><img src="./img/widget-2.jpg" alt=""></a>
+								<div class="post-body">
+									<h3 class="post-title"><a href="blog-post.html">Pagedraw UI Builder Turns Your Website Design Mockup Into Code Automatically</a></h3>
+								</div>
+							</div>
+
+							<div class="post post-widget">
+								<a class="post-img" href="blog-post.html"><img src="./img/widget-3.jpg" alt=""></a>
+								<div class="post-body">
+									<h3 class="post-title"><a href="blog-post.html">Why Node.js Is The Coolest Kid On The Backend Development Block!</a></h3>
+								</div>
+							</div>
+
+							<div class="post post-widget">
+								<a class="post-img" href="blog-post.html"><img src="./img/widget-4.jpg" alt=""></a>
+								<div class="post-body">
+									<h3 class="post-title"><a href="blog-post.html">Tell-A-Tool: Guide To Web Design And Development Tools</a></h3>
+								</div>
+							</div> -->
+						</div>
+						<!-- /post widget -->
+					</div>
+					<!-- /aside -->
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /section -->
+{% endblock %}

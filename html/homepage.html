@@ -5,24 +5,106 @@
             <meta name = "viewport" content="width = device-width, initial-scale=1, shrink-to-fit=no">
             <!--Link for BoostrapCSS-->
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+            <link rel="stylesheet" href="../static/css/style.css">
+            <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:700%7CNunito:300,600" rel="stylesheet"> 
 
-            
+            <!-- Bootstrap -->
+            <link type="text/css" rel="stylesheet" href="../static/css/bootstrap.min.css"/>
+
+            <!-- Font Awesome Icon -->
+            <link rel="stylesheet" href="../static/css/font-awesome.min.css">
+
+            <!-- Custom stlylesheet -->
+            <link type="text/css" rel="stylesheet" href="../static/css/style.css"/>         
+            <title>Mumbo My Jumbo Homepage</title>
             <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
-            
-            <title>
-                Mumbo My Jumbo Homepage
-            </title>
             
         </head>
         
         <body>
             <div>            
-                <img id = "logo" src = "before%20dxp.png" alt = "Mumbo Logo"> 
+                <img id="logo" src="../static/img/logomumbo250x.png" alt = "Mumbo Logo"> 
             </div>
+                <!-- Header -->
+        <header id="header">
+            <!-- Nav -->
+            <div id="nav">
+                <!-- Main Nav -->
+                <div id="nav-fixed">
+                    <div class="container">
+                        <!-- nav -->
+                        <ul class="nav-menu nav navbar-nav">
+                            <li class="cat-6"><a href="#">MumboMyJumbo</a></li>
+                            <li class="cat-2"><a href="#">Politics</a></li>
+                            <li class="cat-1"><a href="#">Sports</a></li>
+                            <li class="cat-3"><a href="#">Office</a></li>
+                            <li class="cat-4"><a href="#">Science</a></li>
+                            <li class="cat-5"><a href="#">Miscellaneous</a></li>
+                            <li class="cat-7"><a href="#">Sign In or Create Account</a></li>
+                        </ul>
+                        <!-- /nav -->
+
+                        <!-- search & aside toggle -->
+                        <div class="nav-btns">
+                            <button class="aside-btn"><i class="fa fa-bars"></i></button>
+                            <button class="search-btn"><i class="fa fa-search"></i></button>
+                            <div class="search-form">
+                                <form class= "search-input" method="GET" action="#">
+                                <input class="search-input" type="text" name="q" value='{{ request.GET.q }}' placeholder="Enter Your Search ...">
+                                </form>
+                                <button class="search-close"><i class="fa fa-times"></i></button>
+                            </div>  
+                            
+                        </div>
+                    </div>
+                            
+                </div>
+            </div>
+
+
+        <!-- section -->
+        <div class="section">
+            <!-- container -->
+            <div class="container">
+                <div class="jumbotron">
+
+                    <h2>MumboMyJumbo.com</h2>
+                    <h3>You're here! It's Useless. You'll Love it. </h3>
+                </div>
+
+<!-- row -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h2>Recent Posts</h2>
+                        </div>
+                    </div>
+                    
+                      
+                    <!-- post -->
+                    <div class="col-md-4">
+                        <div class="post">
+                            <a class="post-img" href="#"><img src="#" alt="#" height="325" width="42"></a>
+                            <div class="post-body">
+                                <div class="post-meta">
+                                    <a class="post-category cat-" href="">Patrick has a bug in his nose</a>
+                                    <span class="post-date"></span>
+                                </div>
+                                <h3 class="post-title"><a href="">Does he really/</a></h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix visible-md visible-lg"></div>
+
+                    
+                </div>
+            </div>
+        </div>
+
             
             
-            
+<!-- BEGIN PATRICKS ORIGINAL CODE  
             
             
             <nav class="navbar navbar-expand-lg" id = "main-nav-bar">
@@ -33,7 +115,7 @@
                      <li class="nav-item active">
                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                      </li>
-                     <li class="nav-item">
+                     <li class="cat-1">
                          <a class="nav-link" href="#" id = "politics-page">Politics</a></li>
                      <li class="nav-item">
                          <a class="nav-link" href="#" id = "sports-page">Sports</a></li>
@@ -51,8 +133,8 @@
 
                     </ul>
                 </div>
-            </nav>
-            
+            </nav> -->
+<!-- END PATRICKS ORIGINAL CODE -->
                   
       <!--<div id = "navigation-bar" class = "container-fluid">      
         <ul id = "navbarNavItems" class = "nav">
@@ -95,6 +177,9 @@
             <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
             <!--Boostrap JS-->
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+                    <script src="../static/js/jquery.min.js"></script>
+        <script src="../static/js/bootstrap.min.js"></script>
+        <script src="../static/js/main.js"></script>
         </body>
         
 </html>
