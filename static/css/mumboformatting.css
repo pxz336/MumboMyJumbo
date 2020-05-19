@@ -1,0 +1,42 @@
+body{
+    color: forestgreen;
+}
+
+h1#tfod{
+    left:600px;
+}
+
+nav{
+    color: forestgreen;
+    font-size: 20px;
+}
+
+li:{
+    color: forestgreen;
+}
+
+p {
+    color:darkgreen;
+}
+
+a {
+    color:forestgreen;
+
+}
+
+a:link, a:active{
+    color:greenyellow;
+}
+
+a:hover{
+    color:green;
+    font-weight: bolder;
+}
+
+nav-item:li{
+    color: forestgreen;
+    outline-style: solid;
+    outline-color: black;
+    
+}
+
