@@ -3,13 +3,18 @@
         <head>
             <meta charset="utf-8">
             <meta name = "viewport" content="width = device-width, initial-scale=1, shrink-to-fit=no">
-            <!--Link for BoostrapCSS-->
+            
+            
+            <!--Link for BoostrapCSS-->            
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
             
+            <!-- Custom CSS-->
             <link rel = "stylesheet" type = text/css href = "../static/css/mumboformatting.css">
 
-
+            <!--TFOD Script-->
+            <script src = "../static/js/tfodJQuery.js"></script>
             
+            <!--Boostrap Scripts-->
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
             
@@ -17,18 +22,20 @@
                 Mumbo My Jumbo Homepage
             </title>
             
+            <!--WORKING ON THIS SHIT-->
+            
         </head>
         
-        <body>
+        <body id = "main-body">
             <div class = "container-fluid">
-            <nav class="navbar navbar-expand-lg" id = "main-nav-bar">
+                <nav class="navbar navbar-expand-lg" id = "main-nav-bar">
                 
                 <a href = "homepage.html" id = "mumbologo"> <img id = "logo" src = "../static/img/logomumbo250x.png" alt = "Mumbo Logo"></a>  
 
                 <div class="navbar" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                        <a class="nav-link" href="homepage.html">Home<span class="sr-only">(current)</span></a></li>
+                            <a class="nav-link" href="homepage.html">Home<span class="sr-only">(current)</span></a></li>
                         <li class="nav-item">
                              <a class="nav-link" href="#" id = "tfos-page">TFOD</a></li>
                         <li class="nav-item">
@@ -45,26 +52,42 @@
 
                     <form class="form-inline">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search the Trash Heap" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Rummage</button>
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                            Rummage </button>
+                    </form>
+                       
+                        
+                    <form class = "form-inline" action = "userSignupForm.html" id = "signup-form" >
+                        <button class = "btn btn-outline-success my-2 my-sm-0" type = "submit" id = "signup-button">
+                            Signup! </button>
                     </form>
                         
-                     <a href = "socialpage.html" id = "socialnav"> <img id = "social-logo" src = "../static/img/socialLogo.png" alt = "Mumbo Social"></a>
+                    <form class = "form-inline" action = "loginForm.html" id = "login-form" >
+                        <button class = "btn btn-outline-success my-2 my-sm-0" type = "submit" id = "login-button">
+                            Login! </button>
+                    </form>
+                        
+                        
+                     <a href = "socialpage.html" id = "socialnav">
+                         <img id = "social-logo" src = "../static/img/socialLogo.png" alt = "Mumbo Social">
+                    </a>
 
                     </ul>
-                </div>
-                
-               
-                
+                </div>                
             </nav>
                 
-            <h1 id = "tfod">Trash Fire Of The Day</h1>
+            <h1 id = "tfod">Trash Fire Of The Day</h1>               
                 
-            <div id = "tfodContent">
-                <script type="text/javascript" src = "../static/js/tfodContent.js">
-                    tfodScript();                
-                </script>
+            <div class = "color-box attached" onclick = "loadTFOD">
+                Click this stuff I think?
+                <div id = "tfodContent">
+                    <script>
+                        //$(document).ready(loadTFOD());            
+                    </script>
+                </div>
+
             </div>
-            
+                
             <p> these are neat yeet words</p>
             
                   
@@ -101,6 +124,8 @@
         </ul>
       
       </div>-->
+                
+
                  
             <!--Boostrap CDN Links-->
             <!--JQuery-->
