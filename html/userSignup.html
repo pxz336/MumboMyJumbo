@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Make a new Mumbo account!</title>
+    </head>
+    
+    <body>
+        <h1>Sign up for Mumbo My Jumbo!</h1>
+        <form method="post" action="userSignupPHP.php">
+            <p>
+                <label for = "userEmail">Your Email Address: </label>
+                <br>
+                <input type="email" id = "userEmail" name = "userEmail"
+                       size = "30" maxlength="320" placeholder = "We won't spam you!" required = "required">
+            </p>
+            
+            <p>
+                <label for = "password">Password: </label>
+                <br>
+                <input type="password" id = "password" name = "password"
+                       size = "30" maxlength="30" placeholder= "Don't forget it!" required = "required">
+            </p>
+        
+            <p>
+                <label for = "firstName">First Name: </label>
+                <br>
+                <input type="text" id = "firstName" name = "firstName" 
+                       size = "30" maxlength="30" placeholder = "Please use your real first name." required = "required">
+            </p>
+            
+            <p>
+                <label for = "lastName">Last Name: </label>
+                <br>
+                <input type="text" id = "lastName" name = "lastName" 
+                       size = "30" maxlength="30" placeholder = "Please use your real last name." required = "required">
+            </p>
+            
+            <p>
+                <label for = "userName">User Name: </label>
+                <br>
+                <input type="text" id = "userName" name = "userName" 
+                       size = "30" maxlength="30" placeholder= "Can be changed later!" required = "required">
+            </p>
+        
+            <button type="submit" name = "submit" value="submit">Sign Up!</button>        
+        </form>
+    </body>
+</html>

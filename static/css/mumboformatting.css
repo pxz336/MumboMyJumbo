@@ -1,17 +1,17 @@
-body{
+body {
     color: forestgreen;
 }
 
-h1#tfod{
+h1#tfod {
     left:600px;
 }
 
-nav{
+nav {
     color: forestgreen;
     font-size: 20px;
 }
 
-li:{
+li: {
     color: forestgreen;
 }
 
@@ -24,19 +24,38 @@ a {
 
 }
 
-a:link, a:active{
+a:link, a:active {
     color:greenyellow;
 }
 
-a:hover{
+a:hover {
     color:green;
     font-weight: bolder;
 }
 
-nav-item:li{
+nav-item:li {
     color: forestgreen;
     outline-style: solid;
     outline-color: black;
     
 }
 
+.navbar-toggler {
+padding: .25rem .75rem;
+font-size: 1.25rem;
+line-height: 1;
+background-color: transparent;
+border: 1px solid black;
+border-radius: .25rem;
+}
+
+
+div.col-sm, div.col-md, div.col-lg, div.col-xl {
+    border: 1px solid green;
+}
+/*form#signup-form {
+    position: relative;
+    left: 200px;
+}
+
+*/
