@@ -40,6 +40,7 @@ nav-item:li {
     
 }
 
+<<<<<<< HEAD
 .navbar-toggler {
 padding: .25rem .75rem;
 font-size: 1.25rem;
@@ -53,6 +54,8 @@ border-radius: .25rem;
 div.col-sm, div.col-md, div.col-lg, div.col-xl {
     border: 1px solid green;
 }
+=======
+>>>>>>> 3f3af980fd6bbb600de27a5e09853e9443ae2dac
 /*form#signup-form {
     position: relative;
     left: 200px;

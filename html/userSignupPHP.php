@@ -97,6 +97,15 @@
         $display_block .= "in use.<br>
         <a href = 'userSignupForm.html'>Please try again!</a>";
         
+<<<<<<< HEAD
+=======
+        /*$_POST['duplicate_email'];
+        $_POST['duplicate_username'];
+        echo $_SERVER('userSignupForm.php');*/
+        
+        //header ("Location: userSignupForm.php?");
+        //THIS IS WEHRE YA BOI LEFGT OFF
+>>>>>>> 3f3af980fd6bbb600de27a5e09853e9443ae2dac
     }
 ?>
 
@@ -111,6 +120,10 @@
         <h1>Signup <?php echo $signup_success; ?> </h1>
         <?php echo $display_block; ?>
         <br><br>
+<<<<<<< HEAD
         <a href="homepage.php" style = "font-size: 25px; font-weight: bold">Return to MumboMyJumbo!</a>
+=======
+        <a href="homepage.html" style = "font-size: 25px; font-weight: bold">Return to MumboMyJumbo!</a>
+>>>>>>> 3f3af980fd6bbb600de27a5e09853e9443ae2dac
     </body>
 </html>
