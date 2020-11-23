@@ -11,20 +11,15 @@ nav {
     font-size: 20px;
 }
 
-li: {
-    color: forestgreen;
-}
-
 p {
     color:darkgreen;
 }
 
 a {
     color:forestgreen;
-
 }
 
-a:link, a:active {
+a:link a:active {
     color:greenyellow;
 }
 
@@ -33,32 +28,88 @@ a:hover {
     font-weight: bolder;
 }
 
-nav-item:li {
+
+.navbar-light .nav-item.active .nav-link,
+.navbar-light .nav-item .nav-link,
+.navbar-light .nav-item:focus .nav-link,
+.navbar-light .nav-item:hover .nav-link {
     color: forestgreen;
-    outline-style: solid;
-    outline-color: black;
+}
+
+
+
+a.nav-link {
+    color: forestgreen;
+}
+
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: .25rem;  
     
 }
 
-<<<<<<< HEAD
-.navbar-toggler {
-padding: .25rem .75rem;
-font-size: 1.25rem;
-line-height: 1;
-background-color: transparent;
-border: 1px solid black;
-border-radius: .25rem;
+
+div.col-sm, div.col, div.col-6/*, div.col-md, div.col-lg, div.col-xl*/ {
+    margin: 5px;
+    border: 1px outset white;
+    text-align: center;
+    align-content: center;
+    /*background-color: #edf7f2;*/
+    background: #e0f5df;
 }
 
-
-div.col-sm, div.col-md, div.col-lg, div.col-xl {
-    border: 1px solid green;
-}
-=======
->>>>>>> 3f3af980fd6bbb600de27a5e09853e9443ae2dac
-/*form#signup-form {
-    position: relative;
-    left: 200px;
+div.col-sm:hover, div.col:hover {
+    margin: 3px;
+    border: 3px outset white;
+    text-align: center;
+    align-content: center;
+    /*background-color: #edf7f2;*/
+    background: #9ae39f; 
 }
 
-*/
+div.col-6:hover {
+    background: #9ae39f; 
+}
+
+img.art-specialfit {
+    display: block;
+    max-height: 300px;
+    object-fit: cover;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    
+    border: 1px solid forestgreen;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+}
+
+img.home-specialfit {
+    /*display: block;*/
+    height: 75%;
+    object-fit: cover;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.figure-caption {
+    font-size: 20px;
+    color: forestgreen;
+}
+
+.form-center {
+    text-align: center;
+}
+
+img.admin-specialfit {
+    height: 60px;
+    width: 60px;
+    object-fit: scale-down;  
+    /*border-right: 10px white;
+    border-top: 3px white;*/
+}

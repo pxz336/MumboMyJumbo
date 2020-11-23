@@ -1,4 +1,7 @@
 function alterLoginButtons(){
+    
+    $("#bottomButt").hide();
+    postNum = 0;
 
     if ($("#loginBoolean").val() == "true"){
 
