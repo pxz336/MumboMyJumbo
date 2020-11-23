@@ -16,17 +16,17 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a></li>
                 <li class="nav-item">
-                     <a class="nav-link" href="#" id = "tfos-page">TFOD</a></li>
+                     <a class="nav-link" href="search.php?tag=tfod" id = "tfod-page">TFOD</a></li>
                 <li class="nav-item">
-                     <a class="nav-link" href="#" id = "politics-page">Politics</a></li>
+                     <a class="nav-link" href="search.php?tag=politics" id = "politics-page">Politics</a></li>
                 <li class="nav-item">
-                     <a class="nav-link" href="#" id = "sports-page">Sports</a></li>
+                     <a class="nav-link" href="search.php?tag=sports" id = "sports-page">Sports</a></li>
                 <li class="nav-item">
-                     <a class="nav-link" href="#" id = "tech-page">Technology</a></li>    
+                     <a class="nav-link" href="search.php?tag=technology" id = "tech-page">Technology</a></li>    
                 <li class="nav-item">
-                     <a class="nav-link" href="#" id = "world-page">World</a></li>
+                     <a class="nav-link" href="search.php?tag=world" id = "world-page">World</a></li>
                 <li class="nav-item">
-                 <a class="nav-link" href="#" id = "life-page">Lifestyle</a></li>
+                 <a class="nav-link" href="search.php?tag=lifestyle" id = "life-page">Lifestyle</a></li>
 
                 <form class="form-inline" method="get" action="search.php">
                     <input class="form-control mr-sm-2" type="search" placeholder=

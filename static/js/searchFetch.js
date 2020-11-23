@@ -46,10 +46,10 @@ function nextArts(jsonData,index) {
         jsonData[index].filepath + "'><br>" + 
         jsonData[index].post_title + "</a></div>";
         
-        //If the next article will be the 5th on the row, close the div
-        if ((postNum + 1) %4 == 0) {
-            output += "</div>";
-        }    
+    //If the next article will be the 5th on the row, close the div
+    if ((postNum + 1) %4 == 0) {
+        output += "</div>";
+    }    
 }
 
 function scrollPage(){
