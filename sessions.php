@@ -12,7 +12,7 @@
             $_SESSION ['firstName'];//*/
         
         //Actual code to keep
-        echo "<input type = 'hidden' id = 'loginBoolean' name = 'loginBoolean' value = 'true'>";
+        echo "<!DOCTYPE html><input type = 'hidden' id = 'loginBoolean' name = 'loginBoolean' value = 'true'>";
         
         echo "<input type = 'hidden' id = 'userNameSession' name = 'userNameSession'
                   value = '" . $_SESSION['userName'] . "'>

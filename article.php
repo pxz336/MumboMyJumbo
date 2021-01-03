@@ -38,7 +38,7 @@ if (isset($_GET['artID'])) {
             or die (mysqli_error($connect) . "Error getting tags 1st time");
         //$get_tags_data = mysqli_fetch_array($get_tags_res, MYSQLI_NUM);
         
-        if (mysqli_num_rows($get_tags_res) > 1) {
+        if (mysqli_num_rows($get_tags_res) > 0) {
             //For getting tags from direct tag table
             $get_tags_sql = "select tag_name from post_tags where tag_id in (";
             $num_res = 0;

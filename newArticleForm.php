@@ -2,13 +2,14 @@
 
 //If no user logged in
 if (!isset($_SESSION['userName'])){
-    header("Location: loginForm.html");
+    header("Location: loginForm.php");
 }
 
 if (isset($_SESSION['title'])) { //Saves title if error w/ photo upload
     echo "<input type = 'hidden' id = 'savedTitle' name = 'savedTitle'
         value = '" . $_SESSION['title'] . "'>";
 }
+
 if (isset($_SESSION['article'])) { //Saves article if error w/ photo upload
     echo "<input type = 'hidden' id = 'savedArticle' name = 'savedArticle'
                   value = '" . $_SESSION['article'] . "'>";
@@ -36,11 +37,23 @@ if (isset($_SESSION['numTags'])) {//Saves tags if error w/photo upload
 <!DOCTYPE html>
 <html>
     <head>        
-        <?php include ("header.php")?>        
+        <?php include ("header.php")?>   
         
+        <script src = "static/js/addTags.js"></script>
+        <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+
         <!--If error posting, replaces inputs and gives error message-->
-        <script>
+        <script>            
+           
             $(document).ready(function(){ 
+                //Custom textarea
+                tinymce.init({
+                selector: '#artText',
+                menubar: 'edit format',
+                width: "60%"
+                });
+                
                 //Default tagging state
                 $("#otherInput").hide();
                 $("#tagErr").hide();
@@ -89,10 +102,7 @@ if (isset($_SESSION['numTags'])) {//Saves tags if error w/photo upload
                     }
                 });
             });        
-        </script>
-        
-        <script src = "static/js/addTags.js"></script>
-        
+        </script>        
         
         <title>Make a new Mumbo post!</title>
         
@@ -101,13 +111,12 @@ if (isset($_SESSION['numTags'])) {//Saves tags if error w/photo upload
     <body>
         <?php include ("nav.php")?>  
         <div class = "container-fluid form-center">
-            <h1>Add To Our Trash Fire!</h1>
             <form method="post" action="imgUpload.php" enctype="multipart/form-data">
                 <div>
                     <label for = "artTitle" style = "text-decoration: underline;">Article Title: </label>
                     <br>
                     <input type="text" id = "artTitle" name = "artTitle" 
-                           size = "40" maxlength="65" placeholder = 
+                           size = "40" maxlength="300" placeholder = 
                            "Runnin through the six with my woas." required = "required"
                            autofocus = "true">
                     <!--Want to add an onblur which will post info to session-->
@@ -122,7 +131,7 @@ if (isset($_SESSION['numTags'])) {//Saves tags if error w/photo upload
                     <label for = "artText" style = "text-decoration: underline;">Article Content: </label>
                     <br>
                     <textarea id = "artText" name = "artText" cols = "65" rows = "10"
-                              placeholder = "Give us that good good." required = "required"></textarea>
+                              placeholder = "Give us that good good."></textarea>
                 </div>
                
                 <div id = "tags-vis">
@@ -152,9 +161,7 @@ if (isset($_SESSION['numTags'])) {//Saves tags if error w/photo upload
                 <button class="btn btn-outline-success my-2 my-sm-0" 
                         type="submit" name = "submit" value="submit">New Post!</button>        
             </form>
-            
-            
-        </div>
+        </div>        
         
         <?php include ("footer.php")?>  
         
