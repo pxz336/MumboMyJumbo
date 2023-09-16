@@ -42,12 +42,13 @@
                            size = "30" maxlength="30" placeholder = "  Please use your real last name." required = "required">
                 </p>
 
-                <p class = "form-center">
+                <div class = "form-center">
                     <label for = "userName">User Name: </label>
                     <br>
                     <input type="text" id = "userName" name = "userName" 
                            size = "30" maxlength="30" placeholder= "  Can be changed later!" required = "required">
-                </p>
+                </div>
+                <div class = 'd-flex justify-content-center' style="font-size:10px;color:red">Please no email addresses</div>
                 
                 <div class = 'd-flex justify-content-center'>
                     <button class = "btn btn-outline-success my-2 my-sm-0" 
@@ -55,6 +56,7 @@
                             value="submit">Sign Up!</button> 
                 </div>
             </form>
+            <div class = 'd-flex justify-content-center' id = "errorBox" name = "errorBox" style ="color:red;font-style:italic">Test Content</div>
         </div>
         
         <?php include("footer.php")?>

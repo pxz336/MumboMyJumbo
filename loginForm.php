@@ -16,11 +16,11 @@
                 <h1>Log in!</h1>
                 <form method="post" action="loginPHP.php">
                     <div>
-                        <label for = "user-name">Username: </label>
+                        <label for = "user-name">Username/Email: </label>
                         <br>
                         <input type="text" id = "user-name" name = "user-name" 
                                size = "30" maxlength="30" placeholder = 
-                               "Username" required = "required"
+                               "Username/Email" required = "required"
                                autofocus = "true">
                     </div>
                     <br>
