@@ -56,7 +56,7 @@
                             value="submit">Sign Up!</button> 
                 </div>
             </form>
-            <div class = 'd-flex justify-content-center' id = "errorBox" name = "errorBox" style ="color:red;font-style:italic">Test Content</div>
+            <div class = 'd-flex justify-content-center' id = "errorBox" name = "errorBox" style ="color:red;font-style:italic"></div>
         </div>
         
         <?php include("footer.php")?>
